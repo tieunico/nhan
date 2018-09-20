@@ -1,0 +1,189 @@
+<html>
+<head>
+  <meta name"viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+  .container {
+    position: absolute;--relative;
+    width: 50%;
+  }
+  img{
+    width: 200%;
+    height: auto;
+  }
+  .container .bay1_btn{
+    position: relative; --absolute;
+    height: 7vh; width: 1.8vw;
+    top: -42.75vh; --1400px;  --22.85%;    --21em;
+    --object-fit: none;--cover;
+    --object-position 50% 50%;
+    left: 14.25vw;--32%;
+    background-color: green;
+    color: red;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .bay2_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -42.75vh;--1635px;  --12.85%;         --47%;
+    left: 19.35vw;--38.5%; --46.5%;      --47%;
+    background-color: green; --white;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.75;
+    opacity: 0.5;
+  }
+  .container .bay3_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -42.75vh;--1635px; --12.85%;
+    left: 24.5vw;--47.25%;--60.75%;
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .bay4_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -42.75vh; left: 29.65vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .bay5_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -42.75vh; left: 56.6vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .aux_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -65.75vh; left: 32.7vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .bay6_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -42.75vh; left: 59.75vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .bay7_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -42.75vh; left: 64.75vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.5;
+  }
+  .container .bay89_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -42.75vh; left: 69.85vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.5;
+  }
+  .container .m1_btn{
+    position: relative; --absolute;
+    height: 3vh; width:3.5vw;
+    top: -75.25vh; left: -13.5vw;
+    background-color: green;
+    --color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .m2_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -65.75vh; left: -12.25vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  .container .tie_btn{
+    position: relative; --absolute;
+    height: 7vh; width:1.8vw;
+    top: -65.75vh; left: 26vw;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.5;
+  }
+  --body{
+    --background-image: url("oneline-wLabels-auxRelocated.svg");
+    --background-image: url("newOneline.svg");
+    --background-repeat: no-repeat;
+    --background-size: cover;
+  --}
+  </style>
+</head>
+  <body>
+    <div class="container">
+      <!-- <img src="oneline-wLabels-auxRelocated.svg">   -->
+      <!-- <img src="newOneline.svg"> -->
+      <img src="oneLine3.svg">
+      <button class="bay1_btn"  id="Bay1"   onclick="colorchange('Bay1')"></button>      <!-- bay 1 button-->
+      <button class="bay2_btn"  id="Bay2"   onclick="colorchange('Bay2')"></button>      <!-- bay 2 button-->
+      <button class="bay3_btn"  id="Bay3"   onclick="colorchange('Bay3')"></button>      <!-- bay 3 button-->
+      <button class="bay4_btn"  id="Bay4"   onclick="colorchange('Bay4')"></button>      <!-- bay 4 button-->
+      <button class="bay5_btn"  id="Bay5"   onclick="colorchange('Bay5')"></button>      <!-- bay 5 button-->
+      <button class="aux_btn"   id="AUX"    onclick="colorchange('AUX')"></button>       <!-- aux button-->
+      <button class="bay6_btn"  id="Bay6"   onclick="colorchange('Bay6')"></button>      <!-- bay 6 button-->
+      <button class="bay7_btn"  id="Bay7"   onclick="colorchange('Bay7')"></button>      <!-- bay 7 button-->
+      <button class="bay89_btn" id="Bay8_9" onclick="colorchange('Bay8_9')"></button>    <!-- bay 8&9 button-->
+      <button class="m1_btn"    id="M1"     onclick="colorchange('M1')"></button>        <!-- main 1 button-->
+      <button class="m2_btn"    id="M2"     onclick="colorchange('M2')"></button>        <!-- main 2 button-->
+      <button class="tie_btn"   id="TIE"    onclick="colorchange('TIE')"></button>       <!-- tie button-->
+    </div>
+    <script>
+      function colorchange(id){
+  //        var op='';
+        var conf=confirm("Are you sure you want to toggle "+id+" breaker?");
+        var bgColor=document.getElementById(id).style.backgroundColor;
+/*
+          <?php
+            $servername = "localhost";
+            $username = "username";
+            $password = "password";
+            $conn = new nysqli($servername,$username,$password);
+            if ($conn->connect_error){
+              die("Connection failed: " . $conn->connect_error);
+            }
+            //echo "Connected successfully";
+            $sql = "SELECT status FROM ";
+            $result = $conn->query($sql);
+
+            if ($result->0) {
+
+*/
+
+        if (conf){          //this condition is kinda broken - first click on red doesn't change
+          if(bgColor=="red"){
+            document.getElementById(id).style.background="green";
+          }
+          else{                //BROKEN!!  else if (bgColor=="green"){
+            document.getElementById(id).style.background="red";
+          }
+        }
+      }
+      </script>
+  </body>
+</html>
