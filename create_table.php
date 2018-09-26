@@ -97,4 +97,10 @@ CREATE TABLE m2 (
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
     reg_time    TIMESTAMP
+);
+CREATE TABLE system_cmd(
+    id          int AUTO_INCREMENT PRIMARY KEY,
+    reg_time    TIMESTAMP,
+    brk_id      varchar(10) NOT NULL,
+    command     varchar(10) NOT NULL
 )
