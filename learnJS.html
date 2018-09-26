@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta>
+            <style>
+            </style>
+        </meta>
+    </head>
+    <body>
+        <h2>What can JavaScript do?</h2>
+        <p>Javascript can change HTML attribute values  </p>
+
+        <h2 id="demo"></h2>
+        <h3 id="name1"></h3>
+    </body>
+    <script>
+    var request = new XMLHttpRequest();
+    request.open('GET', 'data.json', true);
+    request.onload = function () {
+	   // begin accessing JSON data here
+	    var data = JSON.parse(this.response);
+
+	      for (var i = 0; i < data.length; i++) {
+		        console.log('the volage = ' + data[i].voltage + ' is a ' + data[i].current + '.');
+	   }
+    }
+    request.send();
+    </script>
+</html>
