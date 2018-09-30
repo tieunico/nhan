@@ -1,0 +1,163 @@
+.container {
+position: relative;
+width: 50%;
+}
+.container img{
+  width: 200%;
+  height: auto;
+}
+.container .btn0{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top : 47%;
+  left: 32%;
+  background-color: green;
+  color: red;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn1{
+  position: absolute;
+  height: 70px;
+  width: 35px;      --50px;
+  top: 47%;         --47%;
+  left: 47.5%;      --47%;
+  background-color: green; --white;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.75;
+  opacity: 0.5;
+  --font-size
+}
+.container .btn2{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 47%;
+  left: 63%;
+  background-color: red;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn3{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 47%;
+  left: 78.5%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn4{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 47%;
+  left: 122%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn_aux{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 17%;
+  left: 132%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn6{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 47%;
+  left: 137.5%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn7{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 47%;
+  left: 152.5%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn89{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 47%;
+  left: 168.5%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn_m1{
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  top: 10%;
+  left: 12.5%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn_m2{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 17%;
+  left: 22%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .btn_tie{
+  position: absolute;
+  height: 70px;
+  width: 35px;
+  top: 17%;
+  left: 89%;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.5;
+}
+.container .textspan{
+    position: relative;
+    top: 55%;
+    left: 15%;
+    width:100px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}

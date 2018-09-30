@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta name"viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+  <body>
+
+      <div class="container">
+          <img src="oneLineMockup-noButton.svg">
+
+          <button class="btn0" id="select0"   onclick="colorchange('select0')"> </button>      <!-- bay 1 button-->
+          <button value="2" class="btn1" id="select1"  onclick="colorchange('select1')"></button>      <!-- bay 2 button-->
+          <button class="btn2"  id="select2"   onclick="colorchange('select2')"></button>      <!-- bay 3 button-->
+          <button class="btn3"  id="select3"   onclick="colorchange('select3')"></button>      <!-- bay 4 button-->
+          <button class="btn4"  id="select4"   onclick="colorchange('select4')" value=""></button>      <!-- bay 5 button-->
+          <button class="btn_aux" id="select5"   onclick="colorchange('select5')" value="0"></button>   <!-- aux button-->
+          <button class="btn6"  id="select6"   onclick="colorchange('select6')"></button>      <!-- bay 6 button-->
+          <button class="btn7"  id="select7"   onclick="colorchange('select7')"></button>      <!-- bay 7 button-->
+          <button class="btn89" id="select8"   onclick="colorchange('select8')"></button>     <!-- bay 8&9 button-->
+          <button class="btn_m1"  id="select9"   onclick="colorchange('select9')"></button>    <!-- main 1 button-->
+          <button class="btn_m2"  id="select10"   onclick="colorchange('select10')"></button>    <!-- main 2 button-->
+          <button class="btn_tie" id="select11"   onclick="colorchange('select11')"></button>   <!-- tie button-->
+      </div>
+      <div class="text">what is my name?</div>
+      <div id="value"></div>
+    <script>
+        $(document).ready(function(){
+            $("#select0").click(function(){
+                setInterval(function(){
+                    $("div").load('data.json');
+                },3000);
+            });
+        });
+    </script>
+
+  </body>
+</html>
