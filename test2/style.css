@@ -1,0 +1,117 @@
+.container {
+  position: relative;
+  --width: 100%;
+  height: 767px;
+  width: 1910px;
+}
+img{
+  width: 100%; --auto;
+  height: auto;  --100%;
+}
+.container .bay1_btn{
+  position: absolute;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 275px;
+  --object-fit: cover; --none;
+  --object-position 50% 50%;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .bay2_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 410px;
+  background-color: green; --white;
+  border-radius: 5px;
+  opacity: 0.75;
+  opacity: 0.5;
+}
+.container .bay3_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 545px;
+  background-color: red;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .bay4_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 680px;
+  background-color: green;
+  --color: black;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .bay5_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 1235px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .aux_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 131px;  left: 815px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .bay6_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 1370px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .bay7_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 1505px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .bay89_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 353px;  left: 1640px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .m1_btn{
+  position: absolute; --relative;
+  height: 35px;  width: 70px;
+  top: 78px;  left: 85px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .m2_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 131px;  left: 185px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.container .tie_btn{
+  position: absolute; --relative;
+  height: 70px;  width: 35px;
+  top: 131px;  left: 950px;
+  background-color: green;
+  color: black;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+--body{
+  --background-image: url("oneline-wLabels-auxRelocated.svg");
+  --background-image: url("newOneline.svg");
+  --background-repeat: no-repeat;
+  --background-size: cover;
+--}

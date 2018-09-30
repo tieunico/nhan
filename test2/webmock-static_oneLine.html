@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta name"viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  <body>
+    <div class="container">
+      <img src="oneLine3.svg">
+      <button class="bay1_btn"  id="Bay1"   onclick="clicked('Bay1')"></button>      <!-- bay 1 button-->
+      <button class="bay2_btn"  id="Bay2"   onclick="clicked('Bay2')"></button>      <!-- bay 2 button-->
+      <button class="bay3_btn"  id="Bay3"   onclick="clicked('Bay3')"></button>      <!-- bay 3 button-->
+      <button class="bay4_btn"  id="Bay4"   onclick="clicked('Bay4')"></button>      <!-- bay 4 button-->
+      <button class="bay5_btn"  id="Bay5"   onclick="clicked('Bay5')"></button>      <!-- bay 5 button-->
+      <button class="aux_btn"   id="AUX"    onclick="clicked('AUX')"></button>       <!-- aux button-->
+      <button class="bay6_btn"  id="Bay6"   onclick="clicked('Bay6')"></button>      <!-- bay 6 button-->
+      <button class="bay7_btn"  id="Bay7"   onclick="clicked('Bay7')"></button>      <!-- bay 7 button-->
+      <button class="bay89_btn" id="Bay8_9" onclick="clicked('Bay8_9')"></button>    <!-- bay 8&9 button-->
+      <button class="m1_btn"    id="M1"     onclick="clicked('M1')"></button>        <!-- main 1 button-->
+      <button class="m2_btn"    id="M2"     onclick="clicked('M2')"></button>        <!-- main 2 button-->
+      <button class="tie_btn"   id="TIE"    onclick="clicked('TIE')"></button>       <!-- tie button-->
+    </div>
+    <script>
+      $(document).ready(function(){
+        $("#select0").click(function(){
+          setInterval(function(){
+            $("div").load('data.json');
+          },3000);
+        });
+      });
+    </script>
+  </body>
+</html>
