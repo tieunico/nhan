@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Learn Ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div id="show"></div>
+    <ul id="shows"></ul>
+    <button id="mybtn" value=""></button>
+    <script>
+    function getData(){
+        var xml= new XMLHttpRequest();
+        xml.open('GET', 'data.json', true);
+        xml.onload=function(){
+            console.log(xml.responseText);
+            var myData = JSON.parse(xml.responseText);
+        }
+        xml.send();
+    }
+    //getData();
+
+    //JQuery code
+    $(document).ready(function(){
+        var $mydata=$('#shows');
+        $.ajax({
+            type: 'GET',
+            url: 'data.json',
+            dataType: 'json',
+            async: true,
+            success: function(data){
+                $.each(data, function (key,database){
+                    $mydata.append('<li>status:'    +database.status+', '+
+                                    'voltage:'      +database.voltage+', '+
+                                    'current:'      +database.current+', '+
+                                    'power:'        +database.po+', '+
+                                    'ID:'           +database.ID+', '+
+                                    'register:'     +database.reg_time+
+                                    '</li>');
+                });
+            }
+        });
+    });
+        /*
+        $.getJSON('data.json', function(data){
+            console.log(data);
+        });
+        */
+
+
+        /*
+        $.ajax({
+            url: 'data.json',
+            dataType: 'json',
+            type: 'get',
+            async: true,
+            success: function(data){
+                var myData = JSON.parse('data.json');
+                $(myData).each(function(index, value){
+                    console.log(myData);
+                });
+            }
+
+        });
+
+    getData();
+        $(document).ready(function(){
+            setInterval(function(){
+                //$('#show').load('connect_db.php')
+                $('#mybtn').attr('value','1');
+            }, 3000)
+        });*/
+
+    </script>
+</body>
+</html>
