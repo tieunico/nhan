@@ -3,12 +3,27 @@
     <title>Learn Ajax</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
+<style>
+#mybtn {
+    position: absolute;
+    height: 70px;
+    width: 35px;
+    top : 47%;
+    left: 32%;
+    background-color: green;
+    color: red;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.5;
+}
+</style>
 </head>
 <body>
     <div id="show"></div>
     <ul id="shows"></ul>
     <button id="mybtn" value=""></button>
+    <p id="showStatus" value=""></p>
     <script>
     function getData(){
         var xml= new XMLHttpRequest();
@@ -24,6 +39,7 @@
     //JQuery code
     $(document).ready(function(){
         var $mydata=$('#shows');
+        var $mybtnData=$('#mybtn');
         $.ajax({
             type: 'GET',
             url: 'data.json',
@@ -39,6 +55,22 @@
                                     'register:'     +database.reg_time+
                                     '</li>');
                 });
+                $.each(data, function(keys, database){
+                    $mybtnData.click(function(keys, database){
+                        var data=document.getElementById('mybtn').value;
+                        var a= 5;
+                        var b= 3;
+                        document.getElementById('showStatus').innerHTML="MY DATA";
+                        if(data.status=="1"){
+                            $('#mybtn').css('background-color', 'red');
+                        }else{
+                            $('#mybtn').css('background-color', "yellow");
+                        }
+                    });
+                });
+            },
+            error: function(){
+                alert('error loading data!');
             }
         });
     });
@@ -64,7 +96,6 @@
 
         });
 
-    getData();
         $(document).ready(function(){
             setInterval(function(){
                 //$('#show').load('connect_db.php')
