@@ -33,7 +33,7 @@
   resize: none;
   border-style: outset;
   border-width: 3px;
-  background-color: #ddd;
+  /*background-color: #ddd;*/
 }
 .toggle{
   position: absolute;

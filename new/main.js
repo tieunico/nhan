@@ -47,14 +47,12 @@ $.getJSON("data1.json",function(data){//
     var reactPoID="bay"+(i+1)+"_reactPo";
   //  console.log(txtboxID);
 //    console.log(i); //debugola
-    document.getElementById(voltID).innerHTML=data[i].voltage+'V';
-    document.getElementById(currID).innerHTML=data[i].current+'A';
-    document.getElementById(realPoID).innerHTML=data[i].power+'W';
-    document.getElementById(reactPoID).innerHTML=data[i].reactPo+'VAR';
+    document.getElementById(voltID).innerHTML=data[i].voltage+' V';
+    document.getElementById(currID).innerHTML=data[i].current+' A';
+    document.getElementById(realPoID).innerHTML=data[i].power+' W';
+    document.getElementById(reactPoID).innerHTML=data[i].reactPo+' var';
     if(data[i].status == 1){ $(statusID).css('background-color','red'); }
-    else{ $(statusID).css('background-color','green'); }
-    //document.getElementById('bay1_txt').value=data[0].voltage+'v';
-
+    else if(data[i].status == 0){ $(statusID).css('background-color','green'); }
+    else{ $(statusID).css('background-color','yellow'); }
   }
 });
-//populate bay1's voltage
