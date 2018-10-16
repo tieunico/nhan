@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  /*width: 100vw;
+  height: calc(767/1910)*100vw;
+  */
+  height: 767px;
+  width: 1910px;
+}
+/*@media (min-aspect-ratio:1910/767) {
+    .container{
+        height: 100vh;
+        width: calc((1910/767)*100vh);
+    }
+}
+*/
+.container img{
+  width: 100%; /*auto;*/
+  height: auto;  /*100%;*/
+}
+.btn{
+  position: absolute;
+  height: 70px;  width: 35px;
+  background-color: green;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.txtBox{
+  position: absolute;
+  height: 55px;  width: 61px;
+  line-height: 100%;
+  font-size:10pt;
+  font-family: helvetica;
+  resize: none;
+  border-style: outset;
+  border-width: 3px;
+  background-color: #ddd;
+}
+.toggle{
+  position: absolute;
+  top: 750px; left: 10px;
+  height: 35px;  width: 70px;
+  background-color:#ddd;
+  border-radius: 5px;
+  color: black;
+  transition: 0.3s;
+}
+.toggle:hover{
+  background-color: yellow;
+  color: black;
+}
+#bay1{
+  /*height: 7vh; width: 1.7vw;
+  top:32.5vh; left: 13vw;*/
+  top: 353px;  left: 275px;
+}
+#bay2{
+  top: 353px;  left: 410px;
+}
+#bay3{
+  top: 353px;  left: 545px;
+}
+#bay4{
+  top: 353px;  left: 680px;
+  /* color: black; */
+}
+#bay5{
+  top: 353px;  left: 1235px;
+}
+#bay6{
+  top: 353px;  left: 1370px;
+}
+#bay7{
+  top: 353px;  left: 1505px;
+}
+#bay8{
+  top: 353px;  left: 1640px;
+}
+#bay9{
+  height: 35px; width: 70px;
+  top: 78px;  left: 85px;
+}
+#bay10{
+  top: 131px;  left: 185px;
+}
+#bay11{
+  top: 131px;  left: 815px;
+}
+#bay12{
+  top: 131px;  left: 950px;
+}
+#bay1_txt{
+  top: 340px;  left: 311px;
+}
+#bay2_txt{
+  top: 340px;  left: 445px;
+}
+#bay3_txt{
+  top: 340px;  left: 580px;
+}
+#bay4_txt{
+  top: 340px;  left: 715px;
+}
+#bay5_txt{
+  top: 340px;  left: 1270px;
+}
+#bay6_txt{
+  top: 340px;  left: 1405px;
+}
+#bay7_txt{
+  top: 340px;  left: 1540px;
+}
+#bay8_txt{
+  top: 340px;  left: 1675px;
+}
+#bay9_txt{
+  top: 112px;  left: 77px;
+}
+#bay10_txt{
+  top: 118px;  left: 220px;
+}
+/*body{
+  background-image: url("newOneline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
