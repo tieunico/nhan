@@ -40,7 +40,7 @@ function toggleNfo(){
 //$.get("getData.php", function(data){  //old code here calls getData.php
 $.getJSON("data1.json",function(data){//
   for (var i=0;i<data.length;i++){
-    var statusID="button#Bay"+(i+1);
+    var statusID="button#bay"+(i+1);
     var voltID="bay"+(i+1)+"_v";
     var currID="bay"+(i+1)+"_c";
     var realPoID="bay"+(i+1)+"_realPo";
