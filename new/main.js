@@ -38,13 +38,35 @@ function toggleNfo(){
 }
 
 //$.get("getData.php", function(data){  //old code here calls getData.php
-$.getJSON("data1.json",function(data){//
+setInterval(function(){
+    $.getJSON("mydata.php",function(data){//
+      for (var i=0;i<data.length;i++){
+        var statusID="button#bay"+(i+1);
+        var voltID="bay"+(i+1)+"_v";
+        var currID="bay"+(i+1)+"_c";
+        var realPoID="bay"+(i+1)+"_realPo";
+        var reactPoID="bay"+(i+1)+"_reactPo";
+        console.log(data);
+      //  console.log(txtboxID);
+    //    console.log(i); //debugola
+        document.getElementById(voltID).innerHTML=data[i].voltage+' V';
+        document.getElementById(currID).innerHTML=data[i].current+' A';
+        document.getElementById(realPoID).innerHTML=data[i].power+' W';
+        document.getElementById(reactPoID).innerHTML=data[i].reactPo+' var';
+        if(data[i].status == 1){ $(statusID).css('background-color','red'); }
+        else if(data[i].status == 0){ $(statusID).css('background-color','green'); }
+        else{ $(statusID).css('background-color','yellow'); }
+      }
+    });
+}, 2000)
+/*$.getJSON("mydata.php",function(data){//
   for (var i=0;i<data.length;i++){
     var statusID="button#bay"+(i+1);
     var voltID="bay"+(i+1)+"_v";
     var currID="bay"+(i+1)+"_c";
     var realPoID="bay"+(i+1)+"_realPo";
     var reactPoID="bay"+(i+1)+"_reactPo";
+    console.log(data);
   //  console.log(txtboxID);
 //    console.log(i); //debugola
     document.getElementById(voltID).innerHTML=data[i].voltage+' V';
@@ -55,4 +77,6 @@ $.getJSON("data1.json",function(data){//
     else if(data[i].status == 0){ $(statusID).css('background-color','green'); }
     else{ $(statusID).css('background-color','yellow'); }
   }
-});
+});*/
+
+//get data using $.ajax
