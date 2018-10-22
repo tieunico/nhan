@@ -1,5 +1,5 @@
 <?php
-
+//include '/xampp/htdocs/design/nhan/new/connect_db.php';
 $servername="localhost";
 $username="root";
 $password="";
