@@ -51,11 +51,20 @@ setInterval(function(){
     //    console.log(i); //debugola
         document.getElementById(voltID).innerHTML=data[i].voltage+' V';
         document.getElementById(currID).innerHTML=data[i].current+' A';
-        document.getElementById(realPoID).innerHTML=data[i].power+' W';
-        document.getElementById(reactPoID).innerHTML=data[i].reactPo+' var';
-        if(data[i].status == 1){ $(statusID).css('background-color','red'); }
-        else if(data[i].status == 0){ $(statusID).css('background-color','green'); }
-        else{ $(statusID).css('background-color','yellow'); }
+        document.getElementById(realPoID).innerHTML=data[i].po+' W';
+        document.getElementById(reactPoID).innerHTML=data[i].reactive_po+' var';
+        if(data[i].status == 1){
+            $(statusID).css('background-color','red');
+            $(statusID).val('open');
+         }
+        else if(data[i].status == 0){
+            $(statusID).css('background-color','green');
+            $(statusID).val('close');
+        }
+        else{
+            $(statusID).css('background-color','yellow');
+            $(statusID).val('-1');
+        }
       }
     });
 }, 2000)
@@ -78,5 +87,15 @@ setInterval(function(){
     else{ $(statusID).css('background-color','yellow'); }
   }
 });*/
-
-//get data using $.ajax
+//post data using $.ajax
+$(document).ready(function(){
+    $('button').click(function(){
+        var name=document.getElementById('bay1').name;
+        $.ajax({
+            type: "GET",
+            url: "connect_simulator.php",
+            data: {bay:this.name, status:this.value},
+            async: true
+        });
+    });
+});
