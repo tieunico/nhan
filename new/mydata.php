@@ -26,7 +26,23 @@ SELECT * FROM breaker2 WHERE ID=(SELECT max(ID) FROM breaker2)
 UNION ALL
 SELECT * FROM breaker3 WHERE ID=(SELECT MAX(ID) FROM breaker3)
 UNION ALL
-SELECT * FROM breaker4 WHERE ID=(SELECT MAX(ID) FROM breaker4)";
+SELECT * FROM breaker4 WHERE ID=(SELECT MAX(ID) FROM breaker4)
+UNION ALL
+SELECT * FROM breaker5 WHERE ID=(SELECT MAX(ID) FROM breaker5)
+UNION ALL
+SELECT * FROM breaker6 WHERE ID=(SELECT MAX(ID) FROM breaker6)
+UNION ALL
+SELECT * FROM breaker7 WHERE ID=(SELECT MAX(ID) FROM breaker7)
+UNION ALL
+SELECT * FROM breaker_8_9 WHERE ID=(SELECT MAX(ID) FROM breaker_8_9)
+UNION ALL
+SELECT * FROM breaker_m1 WHERE ID=(SELECT MAX(ID) FROM breaker_m1)
+UNION ALL
+SELECT * FROM breaker_m2 WHERE ID=(SELECT MAX(ID) FROM breaker_m2)
+UNION ALL
+SELECT * FROM breaker_aux WHERE ID=(SELECT MAX(ID) FROM breaker_aux)
+UNION ALL
+SELECT * FROM breaker_tie WHERE ID=(SELECT MAX(ID) FROM breaker_tie)";
 $result=mysqli_query($conn, $sql);
 
 $arrayName = array( );
@@ -34,7 +50,7 @@ while ($row=mysqli_fetch_assoc($result)) {
     $arrayName[]=$row;
 }
 
-$myFile="data1.json";
+//$myFile="data1.json";
 //display the array
 //echo '<pre>';
 //print_r($arrayName);
@@ -42,9 +58,9 @@ $myFile="data1.json";
 //convert array into json
 $jsonData = json_encode($arrayName, JSON_PRETTY_PRINT);
 //write json into a file
-if(!file_put_contents($myFile, $jsonData)){
-    echo "no data recorded!";
-}
+//if(!file_put_contents($myFile, $jsonData)){
+    //echo "no data recorded!";
+//}
 print_r( $jsonData);
 //echo json_encode($arrayName);
 $conn->close();
