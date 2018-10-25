@@ -1,0 +1,110 @@
+[
+    {
+        "status": "1",
+        "voltage": "100.000",
+        "current": "5.000",
+        "power": "500.000",
+        "reg_time": "2018-10-24 20:01:05",
+        "ID": "21",
+        "reactPower": "492"
+    },
+    {
+        "status": null,
+        "voltage": "2.000",
+        "current": "3.000",
+        "power": "4.000",
+        "reg_time": "2018-10-24 20:01:20",
+        "ID": "7",
+        "reactPower": "675"
+    },
+    {
+        "status": "0",
+        "voltage": "38.000",
+        "current": "6.000",
+        "power": "265.000",
+        "reg_time": "2018-10-18 22:11:10",
+        "ID": "4",
+        "reactPower": "289"
+    },
+    {
+        "status": "1",
+        "voltage": "38.000",
+        "current": "46.000",
+        "power": "465.000",
+        "reg_time": "2018-10-18 22:12:06",
+        "ID": "2",
+        "reactPower": "689"
+    },
+    {
+        "status": "1",
+        "voltage": "80.000",
+        "current": "19.000",
+        "power": "152.000",
+        "reg_time": "2018-10-18 22:15:06",
+        "ID": "3",
+        "reactPower": "180"
+    },
+    {
+        "status": "0",
+        "voltage": "8.000",
+        "current": "16.000",
+        "power": "136.000",
+        "reg_time": "2018-10-18 22:15:23",
+        "ID": "1",
+        "reactPower": "148"
+    },
+    {
+        "status": "0",
+        "voltage": "55.000",
+        "current": "23.000",
+        "power": "136.000",
+        "reg_time": "2018-10-18 22:17:02",
+        "ID": "1",
+        "reactPower": "148"
+    },
+    {
+        "status": "1",
+        "voltage": "12.000",
+        "current": "23.000",
+        "power": "250.000",
+        "reg_time": "2018-10-18 22:18:45",
+        "ID": "1",
+        "reactPower": "244"
+    },
+    {
+        "status": "0",
+        "voltage": "23.000",
+        "current": "678.000",
+        "power": "4.020",
+        "reg_time": "2018-10-24 23:38:59",
+        "ID": "1",
+        "reactPower": "54.3"
+    },
+    {
+        "status": "0",
+        "voltage": "11.000",
+        "current": "5.000",
+        "power": "55.000",
+        "reg_time": "2018-10-24 23:35:48",
+        "ID": "1",
+        "reactPower": "54.3"
+    },
+    {
+        "status": null,
+        "voltage": null,
+        "current": null,
+        "power": null,
+        "reg_time": "2018-10-25 00:04:38",
+        "ID": "1",
+        "reactPower": null
+    },
+    {
+        "status": "0",
+        "voltage": null,
+        "current": null,
+        "power": null,
+        "reg_time": "2018-10-25 00:05:00",
+        "ID": "1",
+        "reactPower": null
+    }
+]
