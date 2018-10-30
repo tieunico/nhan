@@ -51,8 +51,8 @@ setInterval(function(){
     //    console.log(i); //debugola
         document.getElementById(voltID).innerHTML=data[i].voltage+' V';
         document.getElementById(currID).innerHTML=data[i].current+' A';
-        document.getElementById(realPoID).innerHTML=data[i].po+' W';
-        document.getElementById(reactPoID).innerHTML=data[i].reactive_po+' var';
+        document.getElementById(realPoID).innerHTML=data[i].power+' W';
+        document.getElementById(reactPoID).innerHTML=data[i].reactive_power+' var';
         if(data[i].status == 1){
             $(statusID).css('background-color','red');
             $(statusID).val('open');
