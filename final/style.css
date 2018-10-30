@@ -48,6 +48,9 @@
   background-color: yellow;
   color: black;
 }
+button{
+  cursor: pointer;
+}
 #bay1{
   /*height: 7vh; width: 1.7vw;
   buttons dont resize relative to background img; aspect ratio kills positioning

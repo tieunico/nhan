@@ -40,7 +40,7 @@ setInterval(function(){
       var currID="bay"+(i+1)+"_c";
       var realPoID="bay"+(i+1)+"_realPo";
       var reactPoID="bay"+(i+1)+"_reactPo";
-      console.log(data);
+      //console.log(data);
       //console.log(txtboxID);
       //console.log(i); //debugola
       document.getElementById(voltID).innerHTML=data[i].voltage+' V';
