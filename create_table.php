@@ -8,6 +8,7 @@ CREATE TABLE bay_1 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE bay_2 (
@@ -16,6 +17,7 @@ CREATE TABLE bay_2 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE bay_3 (
@@ -24,6 +26,7 @@ CREATE TABLE bay_3 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE bay_4 (
@@ -32,6 +35,7 @@ CREATE TABLE bay_4 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE bay_5 (
@@ -40,6 +44,7 @@ CREATE TABLE bay_5 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE bay_6 (
@@ -48,6 +53,7 @@ CREATE TABLE bay_6 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE bay_7 (
@@ -56,6 +62,7 @@ CREATE TABLE bay_7 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE bay_8_9 (
@@ -64,6 +71,7 @@ CREATE TABLE bay_8_9 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE tie (
@@ -72,6 +80,7 @@ CREATE TABLE tie (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE aux (
@@ -80,6 +89,7 @@ CREATE TABLE aux (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE m1 (
@@ -88,6 +98,7 @@ CREATE TABLE m1 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE m2 (
@@ -96,11 +107,11 @@ CREATE TABLE m2 (
     voltage     FLOAT(10,3) NOT NULL,
     current     FLOAT(10,3) NOT NULL,
     power       FLOAT(10,3) NOT NULL,
+    reactive_power FLOAT(10,3)  NOT NULL,
     reg_time    TIMESTAMP
 );
 CREATE TABLE system_cmd(
     id          int AUTO_INCREMENT PRIMARY KEY,
-    reg_time    TIMESTAMP,
-    brk_id      varchar(10) NOT NULL,
-    command     varchar(10) NOT NULL
+    time    TIMESTAMP,
+    system_command     varchar(255) NOT NULL
 )
