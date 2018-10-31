@@ -64,3 +64,15 @@ setInterval(function(){
     }
   });
 }, 2000)
+/****************************************************************************
+* Display 6 latest command from north and south in console window
+* Index 0-2 are north command
+* Index 3-5 are south command
+*****************************************************************************/
+setInterval(function(){
+    $.getJSON("cmd_data.php", function(data){
+        for(var i=0; i<data.length; i++){
+            console.log(data);
+        }
+    });
+}, 2000);

@@ -24,6 +24,7 @@ Now you can run the code.
 
   $bayId=$_GET['id'];
   $op=$_GET['op'];
+  $bayId_op=$bayId.":".$op;
 
   switch ($bayId) {             //switch statement defines which dest ip to use
     case "M2":
@@ -37,7 +38,7 @@ Now you can run the code.
 //this block is for debugging: the associated cRIOs will write directly to this
 //table - this block must be removed before onsite installation
                                               //mysql needs single quotes to enclose a string!!!!!
-      $sql_south = "INSERT INTO sys_msg_south_crio (bay_id, command) values('$bayId','$op')";
+      $sql_south = "INSERT INTO sys_msg_south_crio (bay_id, command) values('$bayId','$bayId_op')";
       if (mysqli_query($conn,$sql_south)){
         echo "new data recorded!";
       } else{ echo "error:".$sql."<br>".mysqli_error($conn); }
@@ -49,7 +50,7 @@ Now you can run the code.
     case "Bay_8/9":
       $IP=N_CRIO_IP;
 //begin debug block
-      $sql_north = "INSERT INTO sys_msg_north_crio (bay_id, command) values('$bayId','$op')";
+      $sql_north = "INSERT INTO sys_msg_north_crio (bay_id, command) values('$bayId','$bayId_op')";
       if (mysqli_query($conn,$sql_north)){
         echo "new data recorded!";
       } else{ echo "error:".$sql."<br>".mysqli_error($conn); }
