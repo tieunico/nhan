@@ -3,8 +3,11 @@
   /*width: 100vw;
   height: calc(767/1910)*100vw;
   */
-  height: 767px;
-  width: 1910px;
+  /*height: 767px;
+  width: 1910px;*/
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
 }
 /*@media (min-aspect-ratio:1910/767) {
     .container{
@@ -19,14 +22,16 @@
 }
 .btn{
   position: absolute;
-  height: 70px;  width: 35px;
+  /*height: 70px;  width: 35px;*/
+  height: 10%; width: 2%;
   background-color: orange;
   border-radius: 5px;
   opacity: 0.5;
 }
 .txtBox{
   position: absolute;
-  height: 55px;  width: 61px;
+  /*height: 55px;  width: 61px;*/
+  height: 10%; width: 10%
   line-height: 100%;
   font-size:10pt;
   font-family: helvetica;
@@ -51,79 +56,80 @@
 #bay1{
   /*height: 7vh; width: 1.7vw;
   top:32.5vh; left: 13vw;*/
-  top: 353px;  left: 275px;
+  /*top: 353px;  left: 275px;*/
+  top: 46%;  left: 14.3%;
 }
 #bay2{
-  top: 353px;  left: 410px;
+  top: 46%;  left: 21.3%;
 }
 #bay3{
-  top: 353px;  left: 545px;
+  top: 46%;  left: 28.3%;
 }
 #bay4{
-  top: 353px;  left: 680px;
+  top: 46%;  left: 35.5%;
   /* color: black; */
 }
 #bay5{
-  top: 353px;  left: 1235px;
+  top: 46%;  left: 64.5%;
 }
 #bay6{
-  top: 353px;  left: 1370px;
+  top: 46%;  left: 71.5%;
 }
 #bay7{
-  top: 353px;  left: 1505px;
+  top: 46%;  left: 78.6%;
 }
 #bay8{
-  top: 353px;  left: 1640px;
+  top: 46%;  left: 85.6%;
 }
 #bay9{
-  height: 35px; width: 70px;
-  top: 78px;  left: 85px;
+  height: 4.5%; width: 3.7%;
+  top: 10.2%;  left: 4.7%;
 }
 #bay10{
-  top: 131px;  left: 185px;
+  top: 17%;  left: 9.5%;
 }
 #bay11{
-  top: 131px;  left: 815px;
+  top: 17%;  left: 42.5%;
 }
 #bay12{
-  top: 131px;  left: 950px;
+  top: 17%;  left: 49.5%;
 }
 #bay1_txt{
-  top: 340px;  left: 311px;
+  top: 46%;  left: 16.4%;
 }
 #bay2_txt{
-  top: 340px;  left: 445px;
+  top: 46%;  left: 23.4%;
 }
 #bay3_txt{
-  top: 340px;  left: 580px;
+  top: 46%;  left: 30.4%;
 }
 #bay4_txt{
-  top: 340px;  left: 715px;
+  top: 46%;  left: 37.7%;
 }
 #bay5_txt{
-  top: 340px;  left: 1270px;
+  top: 46%;  left: 66.6%;
 }
 #bay6_txt{
-  top: 340px;  left: 1405px;
+  top: 46%;  left: 73.6%;
 }
 #bay7_txt{
-  top: 340px;  left: 1540px;
+  top: 46%;  left: 80.6%;
 }
 #bay8_txt{
-  top: 340px;  left: 1675px;
+  top: 46%;  left: 87.6%;
 }
 #bay9_txt{
-  top: 112px;  left: 70px;
+  top: 15.2%;  left: 3%;
 }
 #bay10_txt{
-  top: 118px;  left: 220px;
+  top: 17.2%;  left: 12%;
 }
 #bay11_txt{
-  top: 118px;  left: 850px;
+  top: 17.2%;  left: 44.7%;
   display: none;
 }
 #bay12_txt{
-  top: 118px;  left: 985px;
+  top: 17.2%;  left: 51.7%;
   display: none;
 }
 /*body{
