@@ -135,3 +135,27 @@ button { cursor:pointer; }
   top: 17.2%; left:51.75%;
   display: none;  /*no data for tiebreaker */
 }
+#recentSysCmds{
+  position: absolute;
+  top: 1%; left: 60%;
+  height: 16%; width:30%;
+  line-height: 100%;
+  font-size: .8vw;
+  font-family: helvetica;
+  resize: none;
+  border-width: 100%;
+}
+#northCmds{
+  border-style: solid;
+  border-right-style: none;
+  position: absolute;
+  top: 0%; left: 0%;
+  width:50%;
+}
+#southCmds{
+  border-style: solid;
+  border-left-style: none;
+  position: absolute;
+  top: 0%; left: 50%;
+  width:50%;
+}

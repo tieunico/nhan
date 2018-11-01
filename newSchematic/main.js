@@ -72,7 +72,19 @@ setInterval(function(){
 setInterval(function(){
     $.getJSON("cmd_data.php", function(data){
         for(var i=0; i<data.length; i++){
-            console.log(data);
+          var tsNorth="northTime"+i;
+          var cmdNorth="northCmd"+i;
+          var tsSouth="southTime"+i;
+          var cmdSouth="southCmd"+i;
+          //console.log(data);    //debug
+          if(i>4){
+            document.getElementById(tsSouth).innerHTML=data[i].timestamp+"\t";
+            document.getElementById(cmdSouth).innerHTML=data[i].command;
+          }
+          else{
+            document.getElementById(tsNorth).innerHTML=data[i].timestamp+"\t";
+            document.getElementById(cmdNorth).innerHTML=data[i].command;
+          }
         }
     });
 }, 2000);

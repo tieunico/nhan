@@ -10,8 +10,8 @@ if(mysqli_connect_error()){
     die("Connection failed: ".mysqli_connect_error());
 }
 //database queries 5 latest data1
-$sql_north = "SELECT * FROM sys_msg_north_crio ORDER BY timestamp DESC LIMIT 3";
-$sql_south = "SELECT * FROM sys_msg_south_crio ORDER BY timestamp DESC LIMIT 3";
+$sql_north = "SELECT * FROM sys_msg_north_crio ORDER BY timestamp DESC LIMIT 5";
+$sql_south = "SELECT * FROM sys_msg_south_crio ORDER BY timestamp DESC LIMIT 5";
 
 $result_north = mysqli_query($conn, $sql_north);
 $result_south = mysqli_query($conn, $sql_south);
