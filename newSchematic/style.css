@@ -47,9 +47,12 @@ button { cursor:pointer; }
 .toggle{
   position: absolute;
 /*  top: 750px; left: 10px; */
-  top: 0%; left: 95%;
-  height: 35px;  width: 70px;
+  top: 2%; left: 92%;
+  /*height: 35px;  width: 70px;*/
+  height:5%; width:5%;
   background-color:#ddd;
+  font-size: .6vw;
+  font-family: helvetica;
   border-radius: 5px;
   color: black;
   transition: 0.3s;
@@ -137,7 +140,8 @@ button { cursor:pointer; }
 }
 #recentSysCmds{
   position: absolute;
-  top: 1%; left: 60%;
+  /*top: 1%; left: 60%;*/
+  top: 70%; left: 34.5%;
   height: 16%; width:30%;
   line-height: 100%;
   font-size: .8vw;
@@ -158,4 +162,15 @@ button { cursor:pointer; }
   position: absolute;
   top: 0%; left: 0%;
   width:50%;
+}
+#sysMsgs{
+  position: absolute;
+  top: 2%; left: 55%;
+  height: 16%; width:35%;
+  line-height: 100%;
+  font-size: .8vw;
+  font-family: helvetica;
+  resize: none;
+  border-style: solid;
+  border-width: 100%;
 }

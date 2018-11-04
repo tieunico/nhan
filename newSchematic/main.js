@@ -76,14 +76,21 @@ setInterval(function(){
           var cmdNorth="northCmd"+i;
           var tsSouth="southTime"+i;
           var cmdSouth="southCmd"+i;
+          var msgTime="sysTime"+i;
+          var msg="sysMsg"+i;
+
           //console.log(data);    //debug
-          if(i>4){
+          if (i<5){
+            document.getElementById(tsNorth).innerHTML=data[i].timestamp+"\t";
+            document.getElementById(cmdNorth).innerHTML=data[i].command;
+          }
+          else if (i>4 && i<10){    //4<i<10){ //i guess this doesnt work
             document.getElementById(tsSouth).innerHTML=data[i].timestamp+"\t";
             document.getElementById(cmdSouth).innerHTML=data[i].command;
           }
-          else{
-            document.getElementById(tsNorth).innerHTML=data[i].timestamp+"\t";
-            document.getElementById(cmdNorth).innerHTML=data[i].command;
+          else {
+            document.getElementById(msgTime).innerHTML=data[i].time+"\t";
+            document.getElementById(msg).innerHTML=data[i].command;
           }
         }
     });
