@@ -47,8 +47,8 @@ setInterval(function(){
       //console.log(i); //debugola
       document.getElementById(voltID).innerHTML=data[i].voltage+' V';
       document.getElementById(currID).innerHTML=data[i].current+' A';
-      document.getElementById(realPoID).innerHTML=data[i].power+' W';
-      document.getElementById(reactPoID).innerHTML=data[i].reactive_power+' var';
+      document.getElementById(realPoID).innerHTML=data[i].power+' kW';
+      document.getElementById(reactPoID).innerHTML=data[i].reactive_power+' kVAR';
       if(data[i].status == 1){                                    //brkr closed
         $(statusID).css('background-color','red');      //set background to red for dead
         $(statusID).val('OPEN');                                  //cmd = OPEN
