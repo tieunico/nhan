@@ -41,18 +41,18 @@ SELECT * FROM breaker_aux WHERE ID=(SELECT MAX(ID) FROM breaker_aux)
 UNION ALL
 SELECT * FROM breaker_tie WHERE ID=(SELECT MAX(ID) FROM breaker_tie)";
 */
-$sql1  =  "SELECT * FROM bay_1   order by id DESC LIMIT 1";
-$sql2  =  "SELECT * FROM bay_2   order by id DESC LIMIT 1";
-$sql3  =  "SELECT * FROM bay_3   order by id DESC LIMIT 1";
-$sql4  =  "SELECT * FROM bay_4   order by id DESC LIMIT 1";
-$sql5  =  "SELECT * FROM bay_5   order by id DESC LIMIT 1";
-$sql6  =  "SELECT * FROM bay_6   order by id DESC LIMIT 1";
-$sql7  =  "SELECT * FROM bay_7   order by id DESC LIMIT 1";
-$sql8  =  "SELECT * FROM bay_8_9 order by id DESC LIMIT 1";
-$sql9  =  "SELECT * FROM m1      order by id DESC LIMIT 1";
-$sql10 =  "SELECT * FROM m2      order by id DESC LIMIT 1";
-$sql11 =  "SELECT * FROM aux     order by id DESC LIMIT 1";
-$sql12 =  "SELECT * FROM tie     order by id DESC LIMIT 1";
+$sql1  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_1   order by id DESC LIMIT 1";
+$sql2  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_2   order by id DESC LIMIT 1";
+$sql3  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_3   order by id DESC LIMIT 1";
+$sql4  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_4   order by id DESC LIMIT 1";
+$sql5  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_5   order by id DESC LIMIT 1";
+$sql6  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_6   order by id DESC LIMIT 1";
+$sql7  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_7   order by id DESC LIMIT 1";
+$sql8  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM bay_8_9 order by id DESC LIMIT 1";
+$sql9  =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM m1      order by id DESC LIMIT 1";
+$sql10 =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM m2      order by id DESC LIMIT 1";
+$sql11 =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM aux     order by id DESC LIMIT 1";
+$sql12 =  "SELECT status, cast(voltage as int) as voltage, cast(current as int) as current, round(power, 2) as power, round(reactive_power, 2) as reactive_power FROM tie     order by id DESC LIMIT 1";
 
 $result1=mysqli_query($conn, $sql1);
 $result2=mysqli_query($conn, $sql2);
