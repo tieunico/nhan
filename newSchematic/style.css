@@ -149,13 +149,13 @@ button { cursor:pointer; }
   border-style: solid;
   border-right-style: none;
   position: absolute;
-  top: 0%; left: 0%;
+  top: 0%; left: 50%;
   width:50%;
 }
 #southCmds{
   border-style: solid;
   border-left-style: none;
   position: absolute;
-  top: 0%; left: 50%;
+  top: 0%; left: 0%;
   width:50%;
 }
