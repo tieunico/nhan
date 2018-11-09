@@ -47,7 +47,7 @@ Now you can run the code.
     case "Bay_5":
     case "Bay_6":
     case "Bay_7":
-    case "Bay_8/9":
+    case "Bay_8_9":
       $IP=N_CRIO_IP;
 //begin debug block
       $sql_north = "INSERT INTO sys_msg_north_crio (bay_id, command) values('$bayId','$bayId_op')";
